@@ -32,7 +32,7 @@ WEB_HOME = "./public"
 #   10. Check for duplicates before adding an item to the list
 #   11. Use CSS instead of JS to adjust the text-decoration: "line-through" attribute
 def main():
-
+    
     server = create_connection(port = 8080)
     post_data =""
     while True:
@@ -215,7 +215,7 @@ def create_connection(port):
     addr = ("", port)  # "" = all network adapters; usually what you want.
     server = socket.create_server(addr, family=socket.AF_INET6, dualstack_ipv6=True) # prevent rare IPV6 softlock on localhost connections
     server.settimeout(2)
-    print(f'Server started on port {port}. Try: http://localhost:{port}/shopping.html')
+    print(f'Server started on port {port}. Try: http://localhost:{port}/main.html')
     return server
 
 def accept_browser_connection_to(server):

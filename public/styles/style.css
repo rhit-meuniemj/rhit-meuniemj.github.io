@@ -5,21 +5,53 @@
 }
 
 img{
-    scale: 300%;
+    scale: 125%;
 }
 
 .section_head{
     color: #244986;
     font-family: 'Times New Roman', Times, serif;
     font-size: 30px;
-    background-color: ;
 }
 
 
 #headerbox{
+    position: relative;
+    bottom: -100px;
     display: flex;
-    justify-content: left;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
+
+.linker-blue{
+    width: 400px;
+    height: 75px;
+    color: white;
+    border: solid 2px black;
+    background-color:#244986;
+    margin: 25px;
+    font-size: 50px;
+}
+
+.linker-grey{
+    width: 400px;
+    height: 75px;
+    color: white;
+    border: solid 2px black;
+    background-color: gray  ;
+    margin: 25px;
+    font-size: 50px;
+}
+
+#bodybox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    
+}
+
 
 body{
     font-family: 'Times New Roman', Times, serif;

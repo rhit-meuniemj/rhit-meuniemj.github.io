@@ -18,3 +18,16 @@ buttons.forEach(function(button) {
     });
 });
 
+function scrollToSection1() {
+    document.getElementById('Education').scrollIntoView();
+}
+function scrollToSection2() {
+    document.getElementById('Experience').scrollIntoView();
+}
+function scrollToSection3() {
+    document.getElementById('skills').scrollIntoView();
+}
+function scrollToSection4() {
+    document.getElementById('honors').scrollIntoView();
+}
+

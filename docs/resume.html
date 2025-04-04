@@ -7,27 +7,27 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <div id = "bodybox">
-        <button class= "linker" id ="linker" onclick="window.location.href='resume.html';">Resume</button>
-        <button class= "linker" id ="linker" onclick="window.location.href='resume.html';">Portfolio</button>
-        <button class= "linker" id ="linker" onclick="window.location.href='main.html';">Main</button>
-      </div>
+    <div name = head id = "bodybox">
+        <button class= "linker" id ="linker" onclick="window.location.href='./resume.html';">Resume</button>
+        <button class= "linker" id ="linker" onclick="window.location.href='./portfolio.html';">Portfolio</button>
+        <button class= "linker" id ="linker" onclick="window.location.href='./main.html';">Main</button>
+        </div>
       <hr>
       
-    <section class = blueHead>Michael Meunier</section>
+    <section name = name class = blueHead>Michael Meunier</section>
 
         <p>Email: <a href="mailto:meuniemj@rose-hulman.edu">meuniemj@rose-hulman.edu</a></p>
-        <p>Phone: (440) -655-1696</p>
+        <p>Phone: (440)-655-1696</p>
         <p>Address: 2207 Foxboro Ln, Naperville, IL, 60564</p>
 
     <hr>
 
-    <div class = "section_head">Education</div>
+    <section name = "Education" id = "Education" class = "section_head">Education</section>
     <ul>
     <li><strong>Rose Hulman Institute of Technology</strong> | 2021-Present — Terre Haute, IN</li>
     <li><strong>B.S Mechanical Engineering</strong></li>
     <ul>
-        <li>Relevant Classes: Statics, Electrical Systems, Conservation and Accounting Principles, Engineering Design, Fluids, Mechanical Systems, Analysis and Design of Engineering Systems, Graphical Communication, Thermodynamics, Materials, Design for Manufacturing, Vibrations Analysis</li>
+        <li>Relevant Classes: Statics, Electrical Systems, Conservation and Accounting Principles, Engineering Design, Fluids, Mechanical Systems, Analysis and Design of Engineering Systems, Graphical Communication, Thermodynamics,<br> Materials, Design for Manufacturing, Vibrations Analysis</li>
     </ul>
     <li><strong>Computer Science Minor</strong></li>
     <ul>
@@ -35,7 +35,7 @@
     </ul>
     </ul>
 
-    <section class = "section_head">Experience</section>
+    <section name = "Experience" id = "Experience"class = "section_head">Experience</section>
     <p><strong>YMCA Deck Supervisor</strong> | 2020-Present — Naperville, IL</p>
     <ul>
         <li>Supervised pool staff</li>
@@ -62,7 +62,7 @@
         <li>Used rapid prototyping constantly and for a multitude of different needs to continually improve robot</li>
     </ul>
 
-    <section class="section_head">Skills</section>
+    <section name = "skills" id = "skills" class = "section_head">Skills</section>
     <p><strong>CAD Modeling (Solidworks)</strong></p>
     <ul>
         <li>Conceptualized and designed multiple combat fighting robots, rockets, windmill, landing gear, and game objects</li>
@@ -85,14 +85,28 @@
     <ul>
         <li>Created custom game</li>
     </ul>
-
-    <section class = section_head>Honors/Activities</section>
+    
+    <section name ="Honors" id = "honors" class = section_head>Honors/Activities</section>
     <ul>
         <li>Member of Pi Kappa Alpha Fraternity | 2021-Present</li>
         <li>Member of Rose Hulman Combat Robotics team | 2021-Present</li>
         <li>Member of Rose Hulman Role Playing Club | 2021-Present</li>
     </ul>
+    <div>
+        <hr>
+        <a class = sub_text href="https://www.linkedin.com/in/michael-meunier-687502269/">Linked In</a></p>
+    </div>
+    
+    <div class = 'sidebar'>
+        <p class = sidebar_text>Jump to Section</p>
+        <button class = 'section_btn' onclick="scrollToSection1()">Education</button>
+        <button class = 'section_btn' onclick="scrollToSection2()">Experience</button>
+        <button class = 'section_btn' onclick="scrollToSection3()">Skills</button>
+        <button class = 'section_btn' onclick="scrollToSection4()">Honors</button>
+    </div>
 
+   
+  
     <script type="text/javascript" src="scripts/script.js"></script>
 </body>
 </html>

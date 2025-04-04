@@ -15,7 +15,7 @@ server_variables["abc"]=123
 # It is a good idea to put your public files here and not your private files
 # Why might that be a good idea?
 #TODO change to "./public"
-WEB_HOME = "./public"
+WEB_HOME = "docs"
 
 
 #   1. Practice Debugging via the Python Debugger
@@ -32,7 +32,7 @@ WEB_HOME = "./public"
 #   10. Check for duplicates before adding an item to the list
 #   11. Use CSS instead of JS to adjust the text-decoration: "line-through" attribute
 def main():
-    
+
     server = create_connection(port = 8080)
     post_data =""
     while True:

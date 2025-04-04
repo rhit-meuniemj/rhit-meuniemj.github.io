@@ -2,10 +2,18 @@
     color: #244986;
     font-family: 'Times New Roman', Times, serif;
     font-size: 60px;
+    margin: 150px;
 }
 
 img{
     scale: 125%;
+}
+
+.portfolioImg{
+    width: 640px;
+    height: 480px;
+    margin: 50px;
+    padding: 20px;
 }
 
 .section_head{
@@ -23,6 +31,14 @@ img{
     flex-direction: column;
     justify-content: center;
 }
+
+#box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 
 .linker-blue{
     width: 400px;
@@ -44,6 +60,14 @@ img{
     font-size: 50px;
 }
 
+.section_btn{
+    margin:50px;
+    height: 40px;
+    font-size: 25px;
+    justify-content: center;
+    width: 150px;
+}
+
 #bodybox{
     display: flex;
     align-items: center;
@@ -58,3 +82,64 @@ body{
     background-color: #C4CED3;
 }
 
+.sidebar_text{
+    font-size: 30px;
+}
+
+/*https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_layout_named */
+.skillGrid{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    grid-template-areas: 
+        "skills skills skills"
+        "Coding Mechanical Team";
+    gap: 5px;
+    background-color:#244986;
+    padding: 5px;
+
+ 
+}
+
+.skillGrid > div{
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+
+}
+.skillGrid > div.skills{
+    grid-area: skills;
+    text-align: center;
+    color: #244986;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+.skillGrid > div.Coding{
+    grid-area:Coding;
+}
+.skillGrid > div.Mechanical{
+    grid-area: Mechanical;
+}
+.skillGrid >div.Team{
+    grid-area: Team
+}
+
+/*https://docs.plasmic.app/learn/full-screen-height/#:~:text=To%20do%20this%2C%20simply%20set,width%20of%20the%20parent%20element.*/
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width:200px;
+    height: 100vh;
+    background-color: #244986;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding:15px;
+}
+
+.sub_text{
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+}

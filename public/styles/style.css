@@ -1,0 +1,28 @@
+.blueHead{
+    color: #244986;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+}
+
+img{
+    scale: 300%;
+}
+
+.section_head{
+    color: #244986;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    background-color: ;
+}
+
+
+#headerbox{
+    display: flex;
+    justify-content: left;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #C4CED3;
+}
+
